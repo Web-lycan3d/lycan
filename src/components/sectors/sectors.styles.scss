@@ -1,0 +1,35 @@
+/** @format */
+
+.sector-container {
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  margin-top: 4%;
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #003f88;
+    font-style: italic;
+    font-weight: 600;
+  }
+}
+.sector-contents {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sector-imgbox {
+  width: 260px;
+  height: 500px;
+  transition: all 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    transform: translateY(-10px) scale(1.02);
+  }
+}
