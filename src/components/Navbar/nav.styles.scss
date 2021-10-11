@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgb(255, 255, 255);
   backdrop-filter: blur(20px);
 }
 .nav-contents {
@@ -31,7 +31,7 @@
 .nav-ul {
   max-width: 40rem;
 
-  ul {
+  .ul-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,9 +46,49 @@
       letter-spacing: 0.5px;
       opacity: 1;
       transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+
+      a {
+        text-decoration: none;
+        color: #003f88;
+      }
       &:hover {
         transform: scale(1.05);
         cursor: pointer;
+      }
+    }
+    .service {
+      position: relative;
+      .service-dropdown {
+        position: absolute;
+        width: 210px;
+        border: 2px solid rgba(0, 0, 0, 0.027);
+        border-radius: 10px;
+        padding: 0.8rem;
+        height: auto;
+        background-color: #003f88f6;
+
+        top: 3.2rem;
+        right: 0;
+        text-align: right;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.062);
+        animation: an 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        .dropdown-ul {
+          li {
+            transform-origin: right;
+            margin: 0.8rem 0;
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    @keyframes an {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
       }
     }
     .nav-upload {
