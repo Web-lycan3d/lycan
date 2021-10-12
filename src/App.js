@@ -4,20 +4,23 @@ import "./App.css";
 import Footer from "./components/footer/Footer";
 import Nav from "./components/Navbar/Nav";
 import Landing from "./pages/home/Landing";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import Services from "./pages/services/Services";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
   return (
-    <Router>
-      {" "}
+    <>
       <Nav />
-      <Switch>
-        <Route path="/" exact component={Landing} />
-        <Route path="/service/:id" exact component={Services} />
-      </Switch>{" "}
-      <Footer />
-    </Router>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/" exact component={Landing} />
+          <Route path="/service/:id" exact component={Services} />
+        </Switch>{" "}
+        <Footer />
+      </AnimatePresence>
+    </>
   );
 }
 
