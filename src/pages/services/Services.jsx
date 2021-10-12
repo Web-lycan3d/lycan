@@ -32,35 +32,44 @@ const Services = (props) => {
   }, [id]);
   const list = {
     visible: { opacity: 1, y: "0px" },
-    hidden: { opacity: 0, y: "20px" },
+    hidden: { opacity: 0, y: "10px" },
   };
+
   return (
     <React.Fragment>
       <div className="service-container">
         <div className="service-contents">
           <div className="service-details">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              exit={{ opacity: 0 }}
-              variants={list}
-              transition={{ duration: 0.35 }}
-              className="service-text">
-              <h2>{selectedService.serviceName}</h2>
-              <span>{selectedService.serviceDesp}</span>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: "20px" }}
-              animate={{ opacity: 1, y: "0px" }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.4 }}
-              className="service-img">
-              {selectedService.serviceImg ? (
-                <img src={selectedService.serviceImg} alt="service img" />
-              ) : (
-                "loading"
-              )}
-            </motion.div>
+            {selectedService ? (
+              <>
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  exit={{ opacity: 0 }}
+                  variants={list}
+                  transition={{ duration: 0.2 }}
+                  className="service-text">
+                  <h2>{selectedService.serviceName}</h2>
+                  <span>{selectedService.serviceDesp}</span>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: "10px" }}
+                  animate={{ opacity: 1, y: "0px" }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="service-img">
+                  {selectedService.serviceImg ? (
+                    <img src={selectedService.serviceImg} alt="service img" />
+                  ) : (
+                    <h2 style={{ color: "white" }}>Loading</h2>
+                  )}
+                </motion.div>
+              </>
+            ) : (
+              <div className="loader">
+                <h4>Loading</h4>
+              </div>
+            )}
           </div>
         </div>
       </div>
