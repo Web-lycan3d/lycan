@@ -41,51 +41,51 @@ export class Landing extends Component {
           <div className="services">
             <div className="service">
               <img src="https://i.ibb.co/cYb6Y4p/binderjet.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">Binder-jet</span>
             </div>
             <div className="service">
               <img src="https://i.ibb.co/PQWg661/color-jet.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">Color-jet</span>
             </div>
             <div className="service">
               <img src="https://i.ibb.co/WVb1sWf/dlp.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">DLP</span>
             </div>
             <div className="service">
               <img src="https://i.ibb.co/HP96Dc4/dmls.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">DMLS</span>
             </div>
             <div className="service">
               <img src="https://i.ibb.co/92Ld7Fd/fdm.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">FDm</span>
             </div>
             <div className="service">
               <img src="https://i.ibb.co/S30bghT/im.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">Injection Moulding</span>
             </div>
             <div className="service">
               <img src="https://i.ibb.co/TvF2mKd/mjf.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">MJF</span>
             </div>
             <div class="service">
               <img src="https://i.ibb.co/F7XTpHW/paste-extrusion.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">Paste Extrusion</span>
             </div>
             <div class="service">
               <img src="https://i.ibb.co/Th4qPZm/polyjet.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">Polyjet</span>
             </div>
             <div className="service">
               <img src="https://i.ibb.co/ypm7C5j/sla.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">SLA</span>
             </div>
             <div className="service">
               <img src="https://i.ibb.co/Yc4zHZg/sls.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">SLS</span>
             </div>
             <div className="service">
               <img src="https://i.ibb.co/fHf5GDz/vacuum-casting.png" alt="" />
-              <span className="service-name">service-1</span>
+              <span className="service-name">Vaccum Casting</span>
             </div>
           </div>{" "}
           <div className="pricing">
