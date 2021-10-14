@@ -22,7 +22,7 @@ const Services = (props) => {
 
   useEffect(() => {
     const service = AllServices.find((service) => {
-      return service.serviceId === parseInt(id);
+      return service.itemId === parseInt(id);
     });
 
     setSelectedService(service);
@@ -31,8 +31,8 @@ const Services = (props) => {
     //i doonr know other method
   }, [id]);
   const list = {
-    visible: { opacity: 1, y: "0px" },
-    hidden: { opacity: 0, y: "10px" },
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
   };
 
   return (
@@ -47,16 +47,14 @@ const Services = (props) => {
                   animate="visible"
                   exit={{ opacity: 0 }}
                   variants={list}
-                  transition={{ duration: 0.2 }}
                   className="service-text">
-                  <h2>{selectedService.serviceName}</h2>
+                  <h2>{selectedService.Name}</h2>
                   <span>{selectedService.serviceDesp}</span>
                 </motion.div>
                 <motion.div
-                  initial={{ opacity: 0, y: "10px" }}
-                  animate={{ opacity: 1, y: "0px" }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
                   className="service-img">
                   {selectedService.serviceImg ? (
                     <img src={selectedService.serviceImg} alt="service img" />
