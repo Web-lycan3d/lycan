@@ -2,13 +2,13 @@
 
 .sector-container {
   width: 100%;
-  min-height: 90vh;
+  height: 100vh;
   margin-bottom: 5%;
 }
 .sector-contents {
   width: 85%;
   margin: 0 auto;
-  height: 100%;
+  height: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,8 +22,10 @@
     color: #003f88;
   }
   span {
-    font-size: 0.95rem;
-    line-height: 2.2;
+    display: block;
+    font-size: 0.9rem;
+    line-height: 2.5;
+    width: 90%;
     color: #003f88;
     font-weight: 500;
   }
@@ -31,6 +33,7 @@
 .sector-img {
   width: 40%;
   height: 70%;
+
   img {
     object-fit: contain;
     width: 100%;

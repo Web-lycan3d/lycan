@@ -23,7 +23,7 @@ const Nav = () => {
         <div className="nav-ul">
           <ul className="ul-main">
             <li>
-              <Link to="/"> </Link> Academia
+              <Link to="/academia">Academia</Link>
             </li>
             <li className="service">
               <span
@@ -70,10 +70,10 @@ const Nav = () => {
               )}
             </li>
             <li>
-              <Link to="/"> </Link> Ecosystem
+              <Link to="/ecosystem"> Ecosystem</Link>
             </li>
             <li className="nav-upload">
-              <Link to="/"> </Link> Upload
+              <Link to="/">Upload </Link>
             </li>
             <li className="nav-user-account"></li>
           </ul>
