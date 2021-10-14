@@ -1,0 +1,135 @@
+.container-about {
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  flex-direction: column;
+
+  h4 {
+    color: #003f88;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  h1 {
+    color: #000000;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    margin: 2% 5%;
+  }
+
+  .fancy-border {
+    width: 10%;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    align-self: center;
+    padding: 2% 0%;
+  }
+
+  .achievements {
+    display: flex;
+    gap: 24px !important;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 100%;
+    padding: 3% 0%;
+
+    .achievement {
+      width: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2% 0%;
+      margin: 0 -5%;
+
+      h4 {
+        color: #000;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      h2 {
+        color: #003f88;
+        font-size: 25px;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-weight: 800;
+        margin: 0;
+      }
+    }
+  }
+
+  .down {
+    color: #003f88;
+    transition: all 0.5s ease;
+    display: flex;
+    align-content: center;
+    height: 2.3rem;
+    width: 3.3rem;
+    scroll-behavior: smooth;
+
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
+}
+
+.about-sec2 {
+  display: flex;
+  flex-direction: row;
+  padding: 4% 8%;
+  background: linear-gradient(45deg, #1c64b7, #022853);
+
+  .about-sec2-left {
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    .sec2-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: flex-start;
+
+      h1 {
+        color: #fff;
+        font-size: 50px;
+        font-family: "Montserrat", sans-serif;
+        text-align: left;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: #fff;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        text-align: justify;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .about-sec2-right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img{
+          display: flex;
+          align-items: center;
+          width: 80%;
+          height: auto;
+      }
+  }
+
+}
